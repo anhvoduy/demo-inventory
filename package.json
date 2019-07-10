@@ -1,0 +1,30 @@
+{
+  "name": "react-hook",
+  "version": "1.0.0",
+  "description": "react-hook",
+  "engines": {
+    "node": "12.2.0",
+    "npm": "6.9.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhvoduy/react-hook.git"
+  },
+  "author": "voduyanh",
+  "email": "voduyanh1984@yahoo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhvoduy/react-hook/issues"
+  },
+  "homepage": "https://github.com/anhvoduy/react-hook#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "express": "4.17.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  }
+}

@@ -1,0 +1,17 @@
+# Dependency directory
+node_modules
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+#dist folder
+dist
+
+#Webstorm metadata
+.idea
+
+#VSCode metadata
+.vscode
+
+# Mac files
+.DS_Store
