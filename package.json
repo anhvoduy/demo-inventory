@@ -2,23 +2,13 @@
   "name": "react-hook",
   "version": "1.0.0",
   "description": "react hook",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anhvoduy/react-hook.git"
-  },
   "author": "voduyanh",
   "email": "voduyanh1984@yahoo.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anhvoduy/react-hook/issues"
-  },
-  "homepage": "https://github.com/anhvoduy/react-hook#readme",
   "engines": {
     "node": "12.2.0",
     "npm": "6.9.0"
   },
-  "main": "index.js",
-  "proxy": "http://localhost:9090",
   "dependencies": {
     "axios": "0.18.1",
     "express": "4.17.1",
