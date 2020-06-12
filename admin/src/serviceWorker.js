@@ -7,8 +7,8 @@
 // existing tabs open on the page have been closed, since previously cached
 // resources are updated in the background.
 
-// To learn more about the benefits of this model and instructions on how to
-// opt-in, read https://bit.ly/CRA-PWA
+// To learn more about the benefits of this model and instructions on how to opt-in, read https://bit.ly/CRA-PWA
+// GEARVN service worker
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
