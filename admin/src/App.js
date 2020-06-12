@@ -1,4 +1,5 @@
 import React from 'react';
+import info from '../package.json';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,9 +15,8 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+          rel="noopener noreferrer">
+          Inventory: { info.version }
         </a>
       </header>
     </div>
