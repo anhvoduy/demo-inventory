@@ -16,7 +16,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer">
-          Lear React Coins: { info.version }
+          React App Coins: { info.version }
         </a>
       </header>
     </div>
