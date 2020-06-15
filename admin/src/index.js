@@ -11,7 +11,7 @@ import "./assets/css/pe-icon-7-stroke.css";
 import InventoryLayout from './layouts/inventory';
 
 // import './index.css';
-// import App from '././components/App';
+// import App from '././components/HelloWorld';
 import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(
