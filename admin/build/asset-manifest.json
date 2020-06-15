@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.7ad0542d.chunk.js",
-    "main.js.map": "/static/js/main.7ad0542d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e64520e9.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e64520e9.js.map",
-    "static/js/2.bc910bb1.chunk.js": "/static/js/2.bc910bb1.chunk.js",
-    "static/js/2.bc910bb1.chunk.js.map": "/static/js/2.bc910bb1.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b1b016100b314de340a9971f98ce12cf.js": "/precache-manifest.b1b016100b314de340a9971f98ce12cf.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.bc910bb1.chunk.js.LICENSE.txt": "/static/js/2.bc910bb1.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.e64520e9.js",
-    "static/js/2.bc910bb1.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.7ad0542d.chunk.js"
-  ]
+    "main.css": "/react-app-inventory/static/css/main.fcafc2ae.chunk.css",
+    "main.js": "/react-app-inventory/static/js/main.c4a37520.chunk.js",
+    "main.js.map": "/react-app-inventory/static/js/main.c4a37520.chunk.js.map",
+    "runtime~main.js": "/react-app-inventory/static/js/runtime~main.8beedc9b.js",
+    "runtime~main.js.map": "/react-app-inventory/static/js/runtime~main.8beedc9b.js.map",
+    "static/css/2.d2cdaa84.chunk.css": "/react-app-inventory/static/css/2.d2cdaa84.chunk.css",
+    "static/js/2.87469422.chunk.js": "/react-app-inventory/static/js/2.87469422.chunk.js",
+    "static/js/2.87469422.chunk.js.map": "/react-app-inventory/static/js/2.87469422.chunk.js.map",
+    "index.html": "/react-app-inventory/index.html",
+    "precache-manifest.c58c7f442a2eeea590316791a14c70b3.js": "/react-app-inventory/precache-manifest.c58c7f442a2eeea590316791a14c70b3.js",
+    "service-worker.js": "/react-app-inventory/service-worker.js",
+    "static/css/2.d2cdaa84.chunk.css.map": "/react-app-inventory/static/css/2.d2cdaa84.chunk.css.map",
+    "static/css/main.fcafc2ae.chunk.css.map": "/react-app-inventory/static/css/main.fcafc2ae.chunk.css.map",
+    "static/media/pe-icon-7-stroke.css": "/react-app-inventory/static/media/Pe-icon-7-stroke.c45f7de0.svg",
+    "static/media/face-3.jpg": "/react-app-inventory/static/media/face-3.ce7a6b79.jpg",
+    "static/media/bootstrap.min.css": "/react-app-inventory/static/media/glyphicons-halflings-regular.fa277232.woff",
+    "static/media/reactlogo.png": "/react-app-inventory/static/media/reactlogo.9b864b36.png",
+    "static/media/sidebar-1.jpg": "/react-app-inventory/static/media/sidebar-1.6be21e8a.jpg",
+    "static/media/sidebar-2.jpg": "/react-app-inventory/static/media/sidebar-2.7a4ce7cc.jpg",
+    "static/media/sidebar-3.jpg": "/react-app-inventory/static/media/sidebar-3.34535b95.jpg",
+    "static/media/sidebar-4.jpg": "/react-app-inventory/static/media/sidebar-4.7bc259fd.jpg"
+  }
 }
