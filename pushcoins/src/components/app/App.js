@@ -1,6 +1,6 @@
 import React from 'react';
-import info from '../package.json';
-import logo from './logo.svg';
+import info from '../../../package.json';
+import logo from '../../logo.svg';
 import './App.css';
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer">
-          React App Coins: { info.version }
+          React Coins: { info.version }
+        </a>
       </header>
     </div>
   );
