@@ -17,7 +17,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer">
           React App Coins: { info.version }
-        </a>
       </header>
     </div>
   );
