@@ -1,5 +1,6 @@
 {
   "name": "app-inventory",
+  "desc": "app-inventory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
