@@ -4,12 +4,10 @@ const path = require('path');
 const app = express();
 app.set('port', process.env.PORT || 8080);
 
-app.use(express.static(path.join(__dirname, 'admin/build')));
-
-// https://facebook.github.io/create-react-app/docs/deployment
-// Express example above to serve index.html for any unknown paths
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'admin/build', 'index.html'));
+/* register web app */
+app.use('/', express.static(path.join(__dirname, 'admin/build/'), { index: 'index.html' }));
+app.get(['/', '/*'], function(req, res) {
+  res.sendFile(path.join(__dirname, 'admin/build/index.html'));
 });
 
 app.listen(app.get('port'), function () {
