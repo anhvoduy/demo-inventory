@@ -16,7 +16,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer">
-          React Coins: { info.version }
+          React App with Coins: { info.version }
         </a>
       </header>
     </div>
