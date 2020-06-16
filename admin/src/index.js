@@ -9,16 +9,19 @@ import "./assets/css/demo.css";
 import "./assets/css/pe-icon-7-stroke.css";
 import InventoryLayout from './layouts/inventory';
 
-// import './index.css';
-// import App from '././components/App';
+//import './index.css';
+//import App from '././components/App';
+
 import * as serviceWorker from './serviceWorker';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+/*
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+*/
 
 ReactDOM.render(
   <BrowserRouter>
