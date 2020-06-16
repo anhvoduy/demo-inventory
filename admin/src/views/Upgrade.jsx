@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Table, Grid, Row, Col } from "react-bootstrap";
 
 import Card from '../components/base/card';
-
-import Button from "components/CustomButton/CustomButton";
+import Button from '../components/base/customButton';
 
 class Icons extends Component {
   render() {

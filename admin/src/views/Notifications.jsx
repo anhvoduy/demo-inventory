@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Row, Col, Alert } from "react-bootstrap";
 
-import Button from "components/CustomButton/CustomButton.jsx";
+import Button from '../components/base/customButton';
 
 class Notifications extends Component {
   render() {

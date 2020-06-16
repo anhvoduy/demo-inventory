@@ -11,7 +11,7 @@ import {
 import Card from '../components/base/card';
 import { FormInputs } from "components/FormInputs/FormInputs.jsx";
 import { UserCard } from "components/UserCard/UserCard.jsx";
-import Button from "components/CustomButton/CustomButton.jsx";
+import Button from '../components/base/customButton';
 
 import avatar from "assets/img/faces/face-3.jpg";
 
