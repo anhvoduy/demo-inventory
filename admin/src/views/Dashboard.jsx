@@ -3,8 +3,8 @@ import ChartistGraph from "react-chartist";
 import { Grid, Row, Col } from "react-bootstrap";
 
 import Card from '../components/base/card';
-import { StatsCard } from "components/StatsCard/StatsCard.jsx";
-import { Tasks } from "components/Tasks/Tasks.jsx";
+import StatsCard from '../components/base/statsCard';
+import Tasks from '../components/base/tasks';
 import {
   dataPie,
   legendPie,
