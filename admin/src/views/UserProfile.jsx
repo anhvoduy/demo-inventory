@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 
 import Card from '../components/base/card';
-import { FormInputs } from "components/FormInputs/FormInputs.jsx";
+import FormInputs from '../components/base/formInputs';
 import { UserCard } from "components/UserCard/UserCard.jsx";
 import Button from '../components/base/customButton';
 

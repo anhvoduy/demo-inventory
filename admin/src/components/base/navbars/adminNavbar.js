@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Navbar } from "react-bootstrap";
+import React, { Component } from 'react';
+import { Navbar } from 'react-bootstrap';
 
-import AdminNavbarLinks from "./AdminNavbarLinks.jsx";
+import AdminNavbarLinks from './adminNavbarLinks';
 
 class Header extends Component {
   constructor(props) {
@@ -18,12 +18,12 @@ class Header extends Component {
       });
     }
     e.preventDefault();
-    document.documentElement.classList.toggle("nav-open");
-    var node = document.createElement("div");
-    node.id = "bodyClick";
+    document.documentElement.classList.toggle('nav-open');
+    var node = document.createElement('div');
+    node.id = 'bodyClick';
     node.onclick = function() {
       this.parentElement.removeChild(this);
-      document.documentElement.classList.toggle("nav-open");
+      document.documentElement.classList.toggle('nav-open');
     };
     document.body.appendChild(node);
   }
@@ -32,7 +32,7 @@ class Header extends Component {
       <Navbar fluid>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#pablo">{this.props.brandText}</a>
+            <a href='#pablo'>{this.props.brandText}</a>
           </Navbar.Brand>
           <Navbar.Toggle onClick={this.mobileSidebarToggle} />
         </Navbar.Header>
