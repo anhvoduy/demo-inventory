@@ -44,7 +44,7 @@
     "map-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-react.scss src/assets/css/light-bootstrap-dashboard-react.css --source-map true",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
-  },  
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
