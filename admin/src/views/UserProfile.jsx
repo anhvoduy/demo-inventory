@@ -10,7 +10,7 @@ import {
 
 import Card from '../components/base/card';
 import FormInputs from '../components/base/formInputs';
-import { UserCard } from "components/UserCard/UserCard.jsx";
+import UserCard from '../components/base/userCard';
 import Button from '../components/base/customButton';
 
 import avatar from "assets/img/faces/face-3.jpg";

@@ -1,5 +1,4 @@
 import React from "react";
-// react components used to create a google map
 import {
   withScriptjs,
   withGoogleMap,
