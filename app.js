@@ -11,5 +11,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(app.get('port'), function () {
-  console.log('Inventory is running on port:' + app.get('port'));
+  console.log('App Inventory is running on port:' + app.get('port'));
 });
