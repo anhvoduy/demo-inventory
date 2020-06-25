@@ -1,9 +1,13 @@
-version: '3'
+version: '2'
 services:  
-  api:
-    build: ./
-    ports:
-      - "3000:3000"    
+  node:
+    image: "node:12"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
     volumes:
       - ./:/home/app
-    command: []
+    expose:
+      - "3000"
+    command: [npm start]
