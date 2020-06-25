@@ -1,13 +1,13 @@
 version: '2'
 services:  
-  node:
+  web:
     image: "node:12"
-    user: "node"
+    user: "admin"
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
     volumes:
       - ./:/home/app
     expose:
-      - "3000"
-    command: [npm start]
+      - "8080:8080"
+    command: []

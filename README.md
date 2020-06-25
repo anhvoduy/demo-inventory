@@ -3,3 +3,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # sample template:
 https://github.com/creativetimofficial/light-bootstrap-dashboard-react
+
+# run docker:
+docker build -t admin/node-web-app .
+
+docker run -p 8080:8080 -d admin/node-web-app
+
+curl -i localhost:8080
+
+docker stop [containerid]
+
+docker rm [containerid]
+
+docker rmi [imageid]
