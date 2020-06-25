@@ -7,7 +7,9 @@ https://github.com/creativetimofficial/light-bootstrap-dashboard-react
 # run docker:
 docker build -t admin/node-demo-inventory .
 
-docker run -p 8080:8080 -d admin/node-demo-inventory --name demo_inventory
+docker run -p 8080:8080 -d admin/node-demo-inventory
+
+docker logs [containerid]
 
 curl -i localhost:8080
 
