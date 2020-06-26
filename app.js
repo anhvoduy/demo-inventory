@@ -9,7 +9,7 @@ const app = express();
 app.set('port', process.env.PORT || PORT);
 app.set('host', process.env.HOST || HOST);
 
-server.use('/api/status', (req, res, next) => {
+app.use('/api/status', (req, res, next) => {
   return res.send({
     success: true,
     version: appInfo.version
