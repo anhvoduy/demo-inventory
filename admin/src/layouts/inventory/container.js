@@ -8,7 +8,7 @@ import Sidebar from '../../components/base/sidebar';
 
 import FixedPlugin from '../../components/base/fixedPlugin';
 
-import { style } from 'variables/Variables.jsx';
+import { style } from 'variables/Variables.js';
 
 import routes from 'routes.js';
 

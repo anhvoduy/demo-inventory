@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Grid, Row, Col } from "react-bootstrap";
 
 import Card from '../components/base/card';
-import { iconsArray } from "variables/Variables.jsx";
+import { iconsArray } from "variables/Variables.js";
 
 class Icons extends Component {
   render() {

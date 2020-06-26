@@ -1,7 +1,7 @@
 {
-  "name": "app-inventory",
-  "desc": "app-inventory",
-  "version": "1.3.0",
+  "name": "react-accounting-system",
+  "description": "react-accounting-system",
+  "version": "1.3.2",
   "version-light-bootstrap": "1.3.0",
   "private": true,
   "engines": {

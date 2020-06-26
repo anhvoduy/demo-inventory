@@ -16,7 +16,7 @@ import {
   optionsBar,
   responsiveBar,
   legendBar
-} from "variables/Variables.jsx";
+} from "variables/Variables.js";
 
 class Dashboard extends Component {
   createLegend(json) {
