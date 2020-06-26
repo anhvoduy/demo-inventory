@@ -10,7 +10,7 @@ https://github.com/creativetimofficial/light-bootstrap-dashboard-react
 docker build -t admin/node-demo-inventory .
 
 # attach to container
-docker run -p 8080:8080 -d admin/node-demo-inventory
+docker run -p 8082:8080 -d admin/node-demo-inventory
 
 # print app output
 docker logs [containerid]
