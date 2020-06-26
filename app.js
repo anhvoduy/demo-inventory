@@ -8,9 +8,8 @@ const app = express();
 app.set('port', process.env.PORT || PORT);
 app.set('host', process.env.HOST || HOST);
 
-const siteAdmin = path.join(__dirname, 'admin/build');
-app.use('/', express.static(siteAdmin, { index: 'index.html '}));
-app.get('/', function (req, res) {
+app.use('/', express.static(path.join(__dirname, 'admin/build'), { index: 'index.html '}));
+app.get(['/', '/*'], function(req, res) {
   res.sendFile(path.join(__dirname, 'admin/build', 'index.html'));
 });
 
