@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid } from 'react-bootstrap';
+import info from '../../../../package.json'
 
 const Footer = function() {
   return (
@@ -24,8 +25,8 @@ const Footer = function() {
           */}
         </nav>
         <p className='copyright pull-right'>
-          <a href='/'>Inventory System</a>
-          {' '} &copy; {new Date().getFullYear()}
+          {/* <a href='/'>Inventory System</a> */}
+          {'Inventory System '} &copy; {new Date().getFullYear()} {` - version: ${info.version}`}
         </p>
       </Grid>
     </footer>
