@@ -40,10 +40,10 @@ class Sidebar extends Component {
         <div className="sidebar-wrapper">
           <ul className="nav">
             {this.state.width <= 991 ? <AdminNavbarLinks /> : null}
-            {this.props.routes.map((item, key) => {
+            {this.props.routes.map((item, index) => {
               if (!item.redirect)
                 return (
-                  <NavContainer key={key} upgrade={item.upgrade} layout={item.layout} path={item.path} icon={item.icon} name={item.name} activeRoute={this.activeRoute}/>
+                  <NavContainer key={index} upgrade={item.upgrade} layout={item.layout} path={item.path} icon={item.icon} name={item.name} activeRoute={this.activeRoute}/>
                 );
               return null;
             })}

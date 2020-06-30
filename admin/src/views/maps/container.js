@@ -10,13 +10,13 @@ import fnc from '../../config/fnc';
 const CustomMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={13}
-      defaultCenter={{ lat: 40.748817, lng: -73.985428 }}
+      defaultZoom={14}
+      defaultCenter={{ lat: 10.7715925, lng: 106.7036024 }}
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true
       }}>
-      <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
+      <Marker position={{ lat: 10.7715925, lng: 106.7036024 }} />
     </GoogleMap>
   ))
 );
