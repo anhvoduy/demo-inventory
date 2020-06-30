@@ -3,15 +3,15 @@ import { Grid, Row, Col, Table } from 'react-bootstrap';
 import Card from '../../components/base/card';
 import { thArray, tdArray } from '../../variables/Variables';
 
-const AccountList = function() {
+const TableList = function() {
   return (
-    <div className='content'>
+    <div className="content">
       <Grid fluid>
         <Row>
           <Col md={12}>
             <Card
-              title='Striped Table with Hover'
-              category='Here is a subtitle for this table'
+              title="Striped Table with Hover"
+              category="Here is a subtitle for this table"
               ctTableFullWidth
               ctTableResponsive
               content={
@@ -44,4 +44,4 @@ const AccountList = function() {
   );  
 }
 
-export default AccountList;
+export default TableList;
