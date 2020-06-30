@@ -26,3 +26,6 @@ docker stop [containerid]
 docker rm [containerid]
 
 docker rmi [imageid]
+
+# for remove all docker images <none>:
+docker system prune
