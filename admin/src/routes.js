@@ -37,6 +37,13 @@ const dashboardRoutes = [
     icon: "pe-7s-news-paper",
     component: Typography,
     layout: "/admin"
+  },  
+  {
+    path: "/notifications",
+    name: "Notifications",
+    icon: "pe-7s-bell",
+    component: Notifications,
+    layout: "/admin"
   },
   {
     path: "/icons",
@@ -53,13 +60,6 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "pe-7s-bell",
-    component: Notifications,
-    layout: "/admin"
-  },
-  {
     path: "/reports",
     name: "Reports",
     icon: "pe-7s-server",
@@ -67,7 +67,7 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    upgrade: true,
+    upgrade: false,
     path: "/upgrade",
     name: "Upgrade to PRO",
     icon: "pe-7s-rocket",
