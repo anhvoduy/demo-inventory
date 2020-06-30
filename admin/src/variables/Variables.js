@@ -240,14 +240,14 @@ var style = {
 };
 
 // for Reports
-const thReport = ['ID', 'Name_VN', 'Name_En', 'Action'];
+const thReport = ['ID', 'Code', 'Name_VN', 'Name_En', 'Action'];
 const tdReport = [
-  ['1', 'Danh sách tài khoản', 'Accounts', 'Action'],
-  ['2', 'Sổ cái tài khoản', 'Subsidiary ledger', 'Action'],
-  ['3', 'Sổ nhật ký chung', 'General journal', 'Action'],
-  ['6', 'Bảng cân đối phát sinh', 'GL Balance', 'Action'],
-  ['7', 'Bảng cân đối kế toán', 'Balance Sheet', 'Action'],
-  ['8', 'Báo cáo kết quả hoạt động kinh doanh', 'Income Statement', 'Action']
+  ['1', 'GL001', 'Danh sách tài khoản', 'Accounts', 'Action'],
+  ['2', 'GL002', 'Sổ cái tài khoản', 'Subsidiary ledger', 'Action'],
+  ['3', 'GL003', 'Sổ nhật ký chung', 'General journal', 'Action'],
+  ['6', 'GL006', 'Bảng cân đối phát sinh', 'GL Balance', 'Action'],
+  ['7', 'GL007', 'Bảng cân đối kế toán', 'Balance Sheet', 'Action'],
+  ['8', 'GL008', 'Báo cáo kết quả hoạt động kinh doanh', 'Income Statement', 'Action']
 ];
 
 //
