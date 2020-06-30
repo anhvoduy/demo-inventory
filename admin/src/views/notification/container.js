@@ -1,10 +1,8 @@
-import React, { Component } from "react";
-import { Grid, Row, Col, Alert } from "react-bootstrap";
+import React from 'react';
+import { Grid, Row, Col, Alert } from 'react-bootstrap';
+import Button from '../../components/base/customButton';
 
-import Button from '../components/base/customButton';
-
-class Notifications extends Component {
-  render() {
+const Notifications = function() {  
     return (
       <div className="content">
         <Grid fluid>
@@ -179,8 +177,7 @@ class Notifications extends Component {
           </div>
         </Grid>
       </div>
-    );
-  }
+    );  
 }
 
 export default Notifications;
