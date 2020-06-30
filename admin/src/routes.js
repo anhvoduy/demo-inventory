@@ -7,6 +7,8 @@ import Upgrade from "views/Upgrade.jsx";
 
 import Icons from './views/icons';
 import Maps from './views/maps';
+import Accounts from './views/accounts';
+import Transactions from './views/transactions';
 import Reports from './views/reports';
 
 const dashboardRoutes = [
@@ -15,6 +17,34 @@ const dashboardRoutes = [
     name: "Dashboard",
     icon: "pe-7s-graph",
     component: Dashboard,
+    layout: "/admin"
+  },
+  {
+    path: "/accounts",
+    name: "Accounts",
+    icon: "pe-7s-note2",
+    component: Accounts,
+    layout: "/admin"
+  },
+  {
+    path: "/transactions",
+    name: "Transactions",
+    icon: "pe-7s-note",
+    component: Transactions,
+    layout: "/admin"
+  },
+  {
+    path: "/reports",
+    name: "Reports",
+    icon: "pe-7s-server",
+    component: Reports,
+    layout: "/admin"
+  },
+  {
+    path: "/maps",
+    name: "Maps",
+    icon: "pe-7s-map-marker",
+    component: Maps,
     layout: "/admin"
   },
   {
@@ -32,6 +62,13 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
+    path: "/icons",
+    name: "Icons",
+    icon: "pe-7s-science",
+    component: Icons,
+    layout: "/admin"
+  }, 
+  {
     path: "/typography",
     name: "Typography",
     icon: "pe-7s-news-paper",
@@ -44,28 +81,7 @@ const dashboardRoutes = [
     icon: "pe-7s-bell",
     component: Notifications,
     layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "pe-7s-science",
-    component: Icons,
-    layout: "/admin"
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "pe-7s-map-marker",
-    component: Maps,
-    layout: "/admin"
-  },
-  {
-    path: "/reports",
-    name: "Reports",
-    icon: "pe-7s-server",
-    component: Reports,
-    layout: "/admin"
-  },
+  },   
   {
     upgrade: false,
     path: "/upgrade",
