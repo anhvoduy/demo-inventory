@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
-
 import AdminNavbarLinks from './adminNavbarLinks';
 
 class Header extends Component {
@@ -28,11 +27,12 @@ class Header extends Component {
     document.body.appendChild(node);
   }
   render() {
+    const { brandText } = this.props;
     return (
       <Navbar fluid>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href='#pablo'>{this.props.brandText}</a>
+            <a href='#pablo'>{brandText}</a>
           </Navbar.Brand>
           <Navbar.Toggle onClick={this.mobileSidebarToggle} />
         </Navbar.Header>
