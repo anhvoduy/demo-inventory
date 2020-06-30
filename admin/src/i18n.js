@@ -21,6 +21,9 @@ const resources = {
       'Icons': 'Icons',
       'Typography': 'Typography',
       'Notifications': 'Notifications',
+
+      'report_list': 'Report List',
+      'report_list_detail': 'Here is a pdf reports from system',
       'last_update': 'Last updated, Today',
       'refresh': 'Refresh',
       'sign_out': 'Sign out'
@@ -43,6 +46,9 @@ const resources = {
       'Icons': 'Icons',
       'Typography': 'Typography',
       'Notifications': 'Notifications',
+
+      'report_list': 'Danh sách báo cáo',
+      'report_list_detail': 'Xuất dữ liệu  báo cáo định dạng pdf từ hệ thống',
       'last_update': 'Last updated, Today',
       'refresh': 'Đồng bộ',
       'sign_out': 'Đăng xuất'
