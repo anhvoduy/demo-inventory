@@ -2,11 +2,11 @@ import Dashboard from "views/Dashboard.jsx";
 import UserProfile from "views/UserProfile.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
-import Icons from "views/Icons.jsx";
 import Notifications from "views/Notifications.jsx";
 import Upgrade from "views/Upgrade.jsx";
 
-import Maps from "./views/maps";
+import Icons from './views/icons';
+import Maps from './views/maps';
 import Reports from './views/reports';
 
 const dashboardRoutes = [
@@ -62,7 +62,7 @@ const dashboardRoutes = [
   {
     path: "/reports",
     name: "Reports",
-    icon: "pe-7s-bell",
+    icon: "pe-7s-server",
     component: Reports,
     layout: "/admin"
   },

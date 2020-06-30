@@ -33,7 +33,7 @@ const resources = {
       'User Profile': 'Thông tin nhân viên',
       'Table List': 'Table List',
       'Typography': 'Typography',
-      'Icons': 'Icons',
+      'Icons': 'Biểu tượng',
       'Maps': 'Bản đồ',
       'Notifications': 'Thông báo',
       'Reports': 'Báo cáo',

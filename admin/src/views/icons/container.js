@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import { Grid, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 
-import Card from '../components/base/card';
-import { iconsArray } from "variables/Variables.js";
+import Card from '../../components/base/card';
+import { iconsArray } from '../../variables/Variables';
 
-class Icons extends Component {
-  render() {
+const Icons = function() {  
     return (
       <div className="content">
         <Grid fluid>
@@ -52,8 +51,7 @@ class Icons extends Component {
           </Row>
         </Grid>
       </div>
-    );
-  }
+    );  
 }
 
 export default Icons;
