@@ -5,6 +5,7 @@ import Typography from "views/Typography.jsx";
 import Icons from "views/Icons.jsx";
 import Maps from "views/Maps.jsx";
 import Notifications from "views/Notifications.jsx";
+import Reports from './views/reports';
 import Upgrade from "views/Upgrade.jsx";
 
 const dashboardRoutes = [
@@ -55,6 +56,13 @@ const dashboardRoutes = [
     name: "Notifications",
     icon: "pe-7s-bell",
     component: Notifications,
+    layout: "/admin"
+  },
+  {
+    path: "/reports",
+    name: "Reports",
+    icon: "pe-7s-bell",
+    component: Reports,
     layout: "/admin"
   },
   {
