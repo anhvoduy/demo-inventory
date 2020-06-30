@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   Marker
-} from "react-google-maps";
+} from 'react-google-maps';
+import fnc from '../../config/fnc';
 
 const CustomMap = withScriptjs(
   withGoogleMap(props => (
@@ -14,8 +15,7 @@ const CustomMap = withScriptjs(
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true
-      }}
-    >
+      }}>
       <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
     </GoogleMap>
   ))
@@ -24,7 +24,7 @@ const CustomMap = withScriptjs(
 function Maps({ ...prop }) {
   return (
     <CustomMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"
+      googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${fnc.google_api_key}`}
       loadingElement={<div style={{ height: `100%` }} />}
       containerElement={<div style={{ height: `100vh` }} />}
       mapElement={<div style={{ height: `100%` }} />}
