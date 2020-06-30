@@ -6,6 +6,7 @@ import Upgrade from "views/Upgrade.jsx";
 import Icons from './views/icons';
 import Maps from './views/maps';
 import Accounts from './views/accounts';
+import Customer from './views/customer';
 import Transactions from './views/transactions';
 import Reports from './views/reports';
 import TableList from './views/tablelist';
@@ -24,6 +25,13 @@ const dashboardRoutes = [
     name: "Accounts",
     icon: "pe-7s-note2",
     component: Accounts,
+    layout: "/admin"
+  },
+  {
+    path: "/customer",
+    name: "Customer",
+    icon: "pe-7s-user",
+    component: Customer,
     layout: "/admin"
   },
   {
