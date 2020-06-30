@@ -10,6 +10,14 @@ const resources = {
       'username': 'Username',
       'password': 'Password',
       'inventory': 'Inventory',
+      'Dashboard': 'Dashboard',
+      'User Profile': 'User Profile',
+      'Table List': 'Table List',
+      'Typography': 'Typography',
+      'Icons': 'Icons',
+      'Maps': 'Maps',
+      'Notifications': 'Notifications',
+      'Reports': 'Reports',
       'last_update': 'Last updated, Today',
       'refresh': 'Refresh',
       'sign_out': 'Sign out'
@@ -21,6 +29,14 @@ const resources = {
       'username': 'Tên đăng nhập',
       'password': 'Mật khẩu',
       'inventory': 'Quản lý kho',
+      'Dashboard': 'Bảng điện tử',
+      'User Profile': 'Thông tin nhân viên',
+      'Table List': 'Table List',
+      'Typography': 'Typography',
+      'Icons': 'Biểu tượng',
+      'Maps': 'Bản đồ',
+      'Notifications': 'Thông báo',
+      'Reports': 'Báo cáo',
       'last_update': 'Last updated, Today',
       'refresh': 'Đồng bộ',
       'sign_out': 'Đăng xuất'
@@ -29,15 +45,13 @@ const resources = {
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources,
     lng: 'vi',
-
-    keySeparator: false, // we do not use keys in form messages.welcome
-
+    keySeparator: false,
     interpolation: {
-      escapeValue: false // react already safes from xss
+      escapeValue: false
     }
   });
 
