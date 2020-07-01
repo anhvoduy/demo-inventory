@@ -1,8 +1,4 @@
-import Dashboard from "views/Dashboard.jsx";
-import UserProfile from "views/UserProfile.jsx";
-import Typography from "views/Typography.jsx";
-import Upgrade from "views/Upgrade.jsx";
-
+import Dashboard from './views/dashboard';
 import Icons from './views/icons';
 import Maps from './views/maps';
 import Accounts from './views/accounts';
@@ -11,6 +7,9 @@ import Transactions from './views/transactions';
 import Reports from './views/reports';
 import TableList from './views/tablelist';
 import Notifications from './views/notification';
+import Typography from './views/typography';
+import UserProfile from './views/userProfile';
+import Upgrade from './views/upgrade';
 
 const dashboardRoutes = [
   {
