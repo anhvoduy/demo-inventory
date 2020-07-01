@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import ChartistGraph from "react-chartist";
 import { Grid, Row, Col } from "react-bootstrap";
 
-import Card from '../components/base/card';
-import StatsCard from '../components/base/statsCard';
-import Tasks from '../components/base/tasks';
+import Card from '../../components/base/card';
+import StatsCard from '../../components/base/statsCard';
+import Tasks from '../../components/base/tasks';
 import {
   dataPie,
   legendPie,

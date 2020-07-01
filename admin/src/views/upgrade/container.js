@@ -1,20 +1,18 @@
-import React, { Component } from "react";
-import { Table, Grid, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Table, Grid, Row, Col } from 'react-bootstrap';
+import Card from '../../components/base/card';
+import Button from '../../components/base/customButton';
 
-import Card from '../components/base/card';
-import Button from '../components/base/customButton';
-
-class Icons extends Component {
-  render() {
+const Upgrade = function () {  
     return (
-      <div className="content">
+      <div className='content'>
         <Grid fluid>
           <Row>
             <Col md={8} mdOffset={2}>
               <Card
                 hCenter
-                title="Light Bootstrap Dashboard PRO React"
-                category="Are you looking for more components? Please check our Premium Version of Light Bootstrap Dashboard React."
+                title='Light Bootstrap Dashboard PRO React'
+                category='Are you looking for more components? Please check our Premium Version of Light Bootstrap Dashboard React.'
                 ctTableResponsive
                 ctTableFullWidth
                 ctTableUpgrade
@@ -23,8 +21,8 @@ class Icons extends Component {
                     <thead>
                       <tr>
                         <th />
-                        <th className="text-center">Free</th>
-                        <th className="text-center">PRO</th>
+                        <th className='text-center'>Free</th>
+                        <th className='text-center'>PRO</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -46,19 +44,19 @@ class Icons extends Component {
                       <tr>
                         <td>Login/Register/Lock Pages</td>
                         <td>
-                          <i className="fa fa-times text-danger" />
+                          <i className='fa fa-times text-danger' />
                         </td>
                         <td>
-                          <i className="fa fa-check text-success" />
+                          <i className='fa fa-check text-success' />
                         </td>
                       </tr>
                       <tr>
                         <td>Premium Support</td>
                         <td>
-                          <i className="fa fa-times text-danger" />
+                          <i className='fa fa-times text-danger' />
                         </td>
                         <td>
-                          <i className="fa fa-check text-success" />
+                          <i className='fa fa-check text-success' />
                         </td>
                       </tr>
                       <tr>
@@ -70,22 +68,22 @@ class Icons extends Component {
                         <td />
                         <td>
                           <Button
-                            href="#"
+                            href='#'
                             round
                             fill
                             disabled
-                            bsStyle="default"
+                            bsStyle='default'
                           >
                             Current Version
                           </Button>
                         </td>
                         <td>
                           <Button
-                            target="_blank"
-                            href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react/?ref=lbdr-upgrade-page"
+                            target='_blank'
+                            href='http://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react/?ref=lbdr-upgrade-page'
                             round
                             fill
-                            bsStyle="info"
+                            bsStyle='info'
                           >
                             Upgrade to PRO
                           </Button>
@@ -99,8 +97,7 @@ class Icons extends Component {
           </Row>
         </Grid>
       </div>
-    );
-  }
+    );  
 }
 
-export default Icons;
+export default Upgrade;

@@ -12,6 +12,7 @@ const resources = {
       'inventory': 'Inventory',
       'Dashboard': 'Dashboard',
       'Accounts': 'Accounts',
+      'Customer': 'Customer',
       'Transactions': 'Transactions',
       'Reports': 'Reports',
       'Maps': 'Maps',
@@ -21,6 +22,9 @@ const resources = {
       'Icons': 'Icons',
       'Typography': 'Typography',
       'Notifications': 'Notifications',
+
+      'report_list': 'Report List',
+      'report_list_detail': 'Here is a pdf reports from system',
       'last_update': 'Last updated, Today',
       'refresh': 'Refresh',
       'sign_out': 'Sign out'
@@ -34,6 +38,7 @@ const resources = {
       'inventory': 'Quản lý kho',
       'Dashboard': 'Bảng điện tử',
       'Accounts': 'Tài khoản',
+      'Customer': 'Khách hàng',
       'Transactions': 'Giao dịch',
       'Reports': 'Báo cáo',
       'Maps': 'Bản đồ',
@@ -43,6 +48,9 @@ const resources = {
       'Icons': 'Icons',
       'Typography': 'Typography',
       'Notifications': 'Notifications',
+
+      'report_list': 'Danh sách báo cáo',
+      'report_list_detail': 'Xuất dữ liệu  báo cáo định dạng pdf từ hệ thống',
       'last_update': 'Last updated, Today',
       'refresh': 'Đồng bộ',
       'sign_out': 'Đăng xuất'
