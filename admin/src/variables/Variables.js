@@ -239,6 +239,17 @@ var style = {
   }
 };
 
+// for Reports
+const thReport = ['ID', 'Code', 'Name_VN', 'Name_En', 'Action'];
+const tdReport = [
+  ['1', 'GL001', 'Danh sách tài khoản', 'Accounts', 'Action'],
+  ['2', 'GL002', 'Sổ cái tài khoản', 'Subsidiary ledger', 'Action'],
+  ['3', 'GL003', 'Sổ nhật ký chung', 'General journal', 'Action'],
+  ['6', 'GL006', 'Bảng cân đối phát sinh', 'GL Balance', 'Action'],
+  ['7', 'GL007', 'Bảng cân đối kế toán', 'Balance Sheet', 'Action'],
+  ['8', 'GL008', 'Báo cáo kết quả hoạt động kinh doanh', 'Income Statement', 'Action']
+];
+
 //
 // //
 // // // For tables
@@ -581,6 +592,8 @@ module.exports = {
   thArray,
   tdArray, // For tables (TableList view)
   iconsArray, // For icons (Icons view)
+  thReport,
+  tdReport,
   dataPie,
   legendPie,
   dataSales,
@@ -592,3 +605,356 @@ module.exports = {
   responsiveBar,
   legendBar // For charts (Dashboard view)
 };
+
+
+/*
+1. Break-even point: Điểm hòa vốn
+ 
+2. Business entity concept: Nguyên tắc doanh nghiệp là một thực thể
+ 
+3. Business purchase: Mua lại doanh nghiệp
+ 
+4. Calls in arrear: Vốn gọi trả sau
+ 
+5. Capital: Vốn
+ 
+6. Authorized capital: Vốn điều lệ
+ 
+7. Called-up capital: Vốn đã gọi
+ 
+8. Capital expenditure: Chi phí đầu tư
+ 
+9. Invested capital: Vốn đầu tư
+ 
+10. Issued capital: Vốn phát hành
+ 
+11. Uncalled capital: Vốn chưa gọi
+ 
+12. Working capital: Vốn lưu động (hoạt động)
+ 
+13. Capital redemption reserve: Quỹ dự trữ bồi hoàn vốn cổ phần
+ 
+14. Carriage: Chi phí vận chuyển
+ 
+15. Carriage inwards: Chi phí vận chuyển hàng hóa mua
+ 
+16. Carriage outwards: Chi phí vận chuyển hàng hóa bán
+ 
+17. Carrying cost: Chi phí bảo tồn hàng lưu kho
+ 
+18. Cash book: Sổ tiền mặt
+ 
+19. Cash discounts: Chiết khấu tiền mặt
+ 
+20. Cash flow statement: Bảng phân tích lưu chuyển tiền mặt
+ 
+21. Category method: Phương pháp chủng loại
+ 
+22. Cheques: Sec (chi phiếú)
+ 
+23. Clock cards: Thẻ bấm giờ
+ 
+24. Closing an account: Khóa một tài khoản
+ 
+25. Closing stock: Tồn kho cuối kỳ
+ 
+26. Commission errors: Lỗi ghi nhầm tài khoản thanh toán
+ 
+27. Company accounts: Kế toán công ty
+ 
+28. Company Act 1985: Luật công ty năm 1985
+ 
+29. Compensating errors: Lỗi tự triệt tiêu
+ 
+30. Concepts of accounting: Các nguyên tắc kế toán
+ 
+31. Conservatism: Nguyên tắc thận trọng
+ 
+32. Consistency: Nguyên tắc nhất quán
+ 
+33. Control accounts : Tài khoản kiểm tra
+ 
+34. Conventions: Quy ước
+ 
+35. Conversion costs: Chi phí chế biến
+ 
+36. Cost accumulation: Sự tập hợp chi phí
+ 
+37. Cost application: Sự phân bổ chi phí
+ 
+38. Cost concept: Nguyên tắc giá phí lịch sử
+ 
+39. Cost object: Đối tượng tính giá thành
+ 
+40. Cost of goods sold: Nguyên giá hàng bán
+ 
+41. Credit balance: Số dư có
+ 
+42. Credit note: Giấy báo có
+ 
+43. Credit transfer: Lệnh chi
+ 
+44. Creditor: Chủ nợ
+ 
+45. Cumulative preference shares: Cổ phần ưu đãi có tích lũy
+ 
+46. Current accounts: Tài khoản vãng lai
+ 
+47. Current assets: Tài sản lưu động
+ 
+48. Curent liabilities: Nợ ngắn hạn
+ 
+49. Current ratio: Hệ số lưu hoạt
+ 
+50. Debentures: Trái phiếu, giấy nợ
+ 
+51. Debenture interest: Lãi trái phiếu
+ 
+52. Debit note: Giấy báo Nợ
+ 
+53. Debtor: Con nợ
+ 
+54. Depletion: Sự hao cạn
+ 
+55. Depreciation: Khấu hao
+ 
+56. Causes of depreciation: Các nguyên do tính khấu hao
+ 
+57. Depreciation of goodwill: Khấu hao uy tín
+ 
+58. Nature of depreciation: Bản chất của khấu hao
+ 
+59. Provision for depreciation: Dự phòng khấu hao
+ 
+60. Reducing balance method: Phương pháp giảm dần
+ 
+61. Straight-line method: Phương pháp đường thẳng
+ 
+62. Direct costs: Chi phí trực tiếp
+ 
+63. Directors: Hội đồng quản trị
+ 
+64. Directors’ remuneration: Thù kim thành viên Hội đồng quản trị
+ 
+65. Discounts: Chiết khấu
+ 
+66. Discounts allowed: Chiết khấu bán hàng
+ 
+67. Cash discounts: Chiết khấu tiền mặt
+ 
+68. Provision for discounts: Dự phòng chiết khấu
+ 
+69. Discounts received: Chiết khấu mua hàng
+ 
+70. Dishonored cheques: Sec bị từ chối
+ 
+71. Disposal of fixed assets: Thanh lý tài sản cố định
+ 
+72. Dividends: Cổ tức
+ 
+73. Double entry rules: Các nguyên tắc bút toán kép
+ 
+74. Dual aspect concept: Nguyên tắc ảnh hưởng kép
+ 
+75. Drawing: Rút vốn
+ 
+76. Equivalent units: Đơn vị tương đương
+ 
+77. Equivalent unit cost: Giá thành đơn vị tương đương
+ 
+78. Errors: Sai sót
+ 
+79. Expenses prepaid: Chi phí trả trước
+ 
+80. Factory overhead expenses: Chi phí quản lý phân xưởng
+ 
+81. FIFO (First In First Out): Phương pháp nhập trước xuất trước
+ 
+82. Final accounts: Báo cáo quyết toán
+ 
+83. Finished goods: Thành phẩm
+ 
+84. First call: Lần gọi thứ nhất
+ 
+85. Fixed assets: Tài sản cố định
+ 
+86. Fixed capital: Vốn cố định
+ 
+87. Fixed expenses: Định phí / Chi phí cố định
+ 
+88. General ledger: Sổ cái
+ 
+89. General reserve: Quỹ dự trữ chung
+ 
+90. Going concerns concept: Nguyên tắc hoạt động lâu dài
+ 
+91. Goods stolen: Hàng bị đánh cắp
+ 
+92. Goodwill: Uy tín
+ 
+93. Gross loss: Lỗ gộp
+ 
+94. Gross profit: Lãi gộp
+ 
+95. Gross profit percentage: Tỷ suất lãi gộp
+ 
+96. Historical cost: Giá phí lịch sử
+ 
+97. Horizontal accounts: Báo cáo quyết toán dạng chữ T
+ 
+98. Impersonal accounts: Tài khoản phí thanh toán
+ 
+99. Imprest systems: Chế độ tạm ứng
+ 
+100. Income tax: Thuế thu nhập
+ 
+101. Increase in provision: Tăng dự phòng
+ 
+102. Indirect costs: Chi phí gián tiếp
+ 
+103. Installation cost: Chi phí lắp đặt, chạy thử
+ 
+104. Intangible assets: Tài sản vô hình
+ 
+105. Interpretation of accounts: Phân tích các báo cáo quyết toán
+ 
+106. Investments: Đầu tư
+ 
+107. Invoice: Hóa đơn
+ 
+108. Issue of shares: Phát hành cổ phần
+ 
+109. Issued share capital:Vốn cổ phần phát hành
+ 
+110. Job-order cost system: Hệ thống hạch toán chi phí sản xuất theo công việc/ loạt sản phẩm
+ 
+111. Journal: Nhật ký chung
+ 
+112. Journal entries: Bút toán nhật ký
+ 
+113. Liabilities: Công nợ
+ 
+114. LIFO (Last In First Out): Phương pháp nhập sau xuất trước
+ 
+115. Limited company: Công ty trách nhiệm hữu hạn
+ 
+116. Liquidity: Khả năng thanh toán bằng tiền mặt (tính lỏng/ tính thanh khoản)
+ 
+117. Liquidity ratio: Hệ số khả năng thanh toán
+ 
+118. Long-term liabilities: Nợ dài hạn
+ 
+119. Loss: Lỗ
+ 
+120. Gross loss: Lỗ gộp
+ 
+121. Net loss: Lỗ ròng
+ 
+122. Machine hour method: Phương pháp giờ máy
+ 
+123. Manufacturing account: Tài khoản sản xuất
+ 
+124. Mark-up: Tỷ suất lãi trên giá vốn
+ 
+125. Margin: Tỷ suất lãi trên giá bán
+ 
+126. Matching expenses against revenue: Khế hợp chi phí với thu nhập
+ 
+127. Materiality: Tính trọng yếu
+ 
+128. Materials: Nguyên vật liệu
+ 
+129. Money mesurement concept: Nguyên tắc thước đo bằng tiền
+ 
+130. Net assets: Tài sản thuần
+ 
+131. Net book value: Giá trị thuần
+ 
+132. Net realizable value: Giá trị thuần thực hiện được
+ 
+133. Nominal accounts: Tài khoản định danh
+ 
+134. Nominal ledger: Sổ tổng hợp
+ 
+135. Notes to accounts: Ghi chú của báo cáo quyết toán
+ 
+136. Objectivity: Tính khách quan
+ 
+137. Omissions, errors: Lỗi ghi thiếu
+ 
+138. Opening entries: Các bút toán khởi đầu doanh nghiệp
+ 
+139. Opening stock: Tồn kho đầu kỳ
+ 
+140. Operating gains: lợi nhuận trong hoạt động
+ 
+141. Ordinary shares: Cổ phần thường
+ 
+142. Original entry, errors : Lỗi phát sinh từ nhật ký
+ 
+143. Output in equivalent units: Lượng sản phẩm tính theo đơn vị tương đương
+ 
+144. Overdraft: Nợ thấu chi
+ 
+145. Overhead application base: Tiêu thức phân bổ chi phí quản lý phân xưởng
+ 
+146. Overhead application rate: Hệ số phân bổ chi phí quản lý phân xưởng
+ 
+147. Oversubscription of shares: Đăng ký cổ phần vượt mức
+ 
+148. Paid-up capital: Vốn đã góp
+ 
+149. Par, issued at: Phát hành theo mệnh giá
+ 
+150. Periodic stock: Phương pháp theo dõi tồn kho định kỳ
+ 
+151. Perpetual stock: Phương pháp theo dõi tồn kho liên tục
+ 
+152. Personal accounts: Tài khoản thanh toán
+ 
+153. Petty cash books: Sổ quỹ tạp phí
+ 
+154. Petty cashier: Thủ quỹ tạp phí
+ 
+155. Physical deteration: Sự hao mòn vật chất
+ 
+156. Physical units: Đơn vị (sản phẩm thực tế)
+ 
+157. Posting: Vào sổ tài khoản
+ 
+158. Predetermined application rate: Hệ số phân bổ chi phí định trước
+ 
+159. Preference shares: Cổ phần ưu đãi
+ 
+160. Cummulative preference share: Cổ phần ưu đãi có tích lũy
+ 
+161. Non-cummulative preference share: Cổ phần ưu đãi không tích lũy
+ 
+162. Preliminary expenses: Chi phí khởi lập
+ 
+163. Prepaid expenses: Chi phí trả trước
+ 
+164. Private company: Công ty tư nhân
+ 
+165. Profitability: Khả năng sinh lời
+ 
+166. Prime cost: Giá thành cơ bản
+ 
+167. Principle, error of: Lỗi định khoản
+ 
+168. Process cost system: Hệ thống hạch toán CPSX theo giai đoạn công nghệ
+ 
+169. Product cost: Giá thành sản phẩm
+ 
+170. Production cost: Chi phí sản xuất
+ 
+171. Profits: lợi nhuận, lãi
+ 
+172. Appropriation of profit: Phân phối lợi nhuận
+ 
+173. Gross profit: Lãi gộp
+ 
+174. Net profit: Lãi ròng
+ 
+175. Profit and loss account: Tài khoản kết quả
+*/
