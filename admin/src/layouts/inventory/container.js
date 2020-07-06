@@ -155,27 +155,27 @@ class Admin extends Component {
     return (
       <div className='wrapper'>
         <NotificationSystem ref='notificationSystem' style={style} />
-        <Sidebar {...this.props} routes={routes} image={this.state.image}
-        color={this.state.color}
-        hasImage={this.state.hasImage}/>
+        <Sidebar  {...this.props} 
+                  routes={routes} 
+                  image={this.state.image}
+                  color={this.state.color}
+                  hasImage={this.state.hasImage} />
         <div id='main-panel' className='main-panel' ref='mainPanel'>
-          <AdminNavbar
-            {...this.props}
-            brandText={this.getBrandText(this.props.location.pathname)}
-          />
-          <Switch>{this.getRoutes(routes)}</Switch>
+          <AdminNavbar  {...this.props}
+                        brandText={this.getBrandText(this.props.location.pathname)} />
+          <Switch>
+            {this.getRoutes(routes)}
+          </Switch>
           <Footer />
-          <FixedPlugin
-            handleImageClick={this.handleImageClick}
-            handleColorClick={this.handleColorClick}
-            handleHasImage={this.handleHasImage}
-            bgColor={this.state['color']}
-            bgImage={this.state['image']}
-            mini={this.state['mini']}
-            handleFixedClick={this.handleFixedClick}
-            fixedClasses={this.state.fixedClasses}
-          />
-        </div>
+          <FixedPlugin  handleImageClick={this.handleImageClick}
+                        handleColorClick={this.handleColorClick}
+                        handleHasImage={this.handleHasImage}
+                        bgColor={this.state['color']}
+                        bgImage={this.state['image']}
+                        mini={this.state['mini']}
+                        handleFixedClick={this.handleFixedClick}
+                        fixedClasses={this.state.fixedClasses} />
+          </div>
       </div>
     );
   }
