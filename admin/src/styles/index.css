@@ -16,3 +16,7 @@ code {
   position: relative;
   height: 100%;
 }
+
+#rptForm {
+  margin: 1% 15% 1% 15%;
+}

@@ -11,12 +11,20 @@ import Typography from './views/typography';
 import UserProfile from './views/userProfile';
 import Upgrade from './views/upgrade';
 
-const dashboardRoutes = [
+import Rpt001 from './views/reports/rpt001';
+import Rpt002 from './views/reports/rpt002';
+import Rpt003 from './views/reports/rpt003';
+import Rpt006 from './views/reports/rpt006';
+import Rpt007 from './views/reports/rpt007';
+import Rpt008 from './views/reports/rpt008';
+
+const routes = [
   {
     path: "/dashboard",
     name: "Dashboard",
     icon: "pe-7s-graph",
     component: Dashboard,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -24,6 +32,7 @@ const dashboardRoutes = [
     name: "Accounts",
     icon: "pe-7s-note2",
     component: Accounts,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -31,6 +40,7 @@ const dashboardRoutes = [
     name: "Customer",
     icon: "pe-7s-user",
     component: Customer,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -38,6 +48,7 @@ const dashboardRoutes = [
     name: "Transactions",
     icon: "pe-7s-note",
     component: Transactions,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -45,13 +56,15 @@ const dashboardRoutes = [
     name: "Reports",
     icon: "pe-7s-server",
     component: Reports,
+    redirect: false,
     layout: "/admin"
-  },
+  },  
   {
     path: "/maps",
     name: "Maps",
     icon: "pe-7s-map-marker",
     component: Maps,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -59,6 +72,7 @@ const dashboardRoutes = [
     name: "User Profile",
     icon: "pe-7s-user",
     component: UserProfile,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -66,6 +80,7 @@ const dashboardRoutes = [
     name: "Table List",
     icon: "pe-7s-note2",
     component: TableList,
+    redirect: false,
     layout: "/admin"
   },
   {
@@ -73,6 +88,7 @@ const dashboardRoutes = [
     name: "Icons",
     icon: "pe-7s-science",
     component: Icons,
+    redirect: false,
     layout: "/admin"
   }, 
   {
@@ -80,6 +96,7 @@ const dashboardRoutes = [
     name: "Typography",
     icon: "pe-7s-news-paper",
     component: Typography,
+    redirect: false,
     layout: "/admin"
   },  
   {
@@ -87,6 +104,7 @@ const dashboardRoutes = [
     name: "Notifications",
     icon: "pe-7s-bell",
     component: Notifications,
+    redirect: false,
     layout: "/admin"
   },   
   {
@@ -95,8 +113,59 @@ const dashboardRoutes = [
     name: "Upgrade to PRO",
     icon: "pe-7s-rocket",
     component: Upgrade,
+    redirect: false,
     layout: "/admin"
+  },
+
+  // routes for report list
+  {
+    path: '/rpt001',
+    name: 'rpt001',
+    icon: '',
+    component: Rpt001,
+    redirect: true,
+    layout: '/admin'
+  },
+  {
+    path: '/rpt002',
+    name: 'rpt002',
+    icon: '',
+    component: Rpt002,
+    redirect: true,
+    layout: '/admin'
+  },
+  {
+    path: '/rpt003',
+    name: 'rpt003',
+    icon: '',
+    component: Rpt003,
+    redirect: true,
+    layout: '/admin'
+  },
+  {
+    path: '/rpt006',
+    name: 'rpt006',
+    icon: '',
+    component: Rpt006,
+    redirect: true,
+    layout: '/admin'
+  },
+  {
+    path: '/rpt007',
+    name: 'rpt007',
+    icon: '',
+    component: Rpt007,
+    redirect: true,
+    layout: '/admin'
+  },
+  {
+    path: '/rpt008',
+    name: 'rpt008',
+    icon: '',
+    component: Rpt008,
+    redirect: true,
+    layout: '/admin'
   }
 ];
 
-export default dashboardRoutes;
+export default routes;
