@@ -60,18 +60,12 @@ class Admin extends Component {
     return routes.map((prop, key) => {
       if (prop.layout === '/admin') {
         return (
-          <Route
-            path={prop.layout + prop.path}
-            render={props => (
-              <prop.component
-                {...props}
-                handleClick={this.handleNotificationClick}
-              />
-            )}
-            key={key}
-          />
+          <Route  path={prop.layout + prop.path}
+                  render={props => (<prop.component {...props} handleClick={this.handleNotificationClick} />)}
+                  key={key} />
         );
-      } else {
+      } 
+      else {
         return null;
       }
     });

@@ -1,15 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Grid, Row, Col, Table } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/base/card';
 import { thReport, tdReport } from '../../variables/Variables';
 
-const Reports = function() {
+const Reports = function() {  
   const { t } = useTranslation();
-  const selectReport = (prop) => {
-    const code = prop[1];
-    console.log('report code:', code);
-  }
   return (
     <div className='content'>
       <Grid fluid>
@@ -33,8 +30,7 @@ const Reports = function() {
                                 { 
                                   prop.map((item, index) => {
                                     if(item === 'Action') {
-                                      // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                                      return <td key={index}><a href="#" onClick={() => selectReport(prop)}>{item}</a></td>;
+                                      return <td key={index}><Link to={`/admin/${prop[1]}`}>{item}</Link></td>;
                                     }
                                     else {
                                       return <td key={index}>{item}</td>;

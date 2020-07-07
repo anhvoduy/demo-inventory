@@ -29,12 +29,10 @@ class Sidebar extends Component {
       backgroundImage: "url(" + this.props.image + ")"
     };
     return (
-      <div
-        id="sidebar"
-        className="sidebar"
-        data-color={this.props.color}
-        data-image={this.props.image}>
-          {this.props.hasImage ? (<div className="sidebar-background" style={sidebarBackground} />) : (null)}
+      <div  id="sidebar" className="sidebar" data-color={this.props.color} data-image={this.props.image}>
+        
+        {this.props.hasImage ? (<div className="sidebar-background" style={sidebarBackground} />) : (null)}
+        
         <LogoContainer />
         
         <div className="sidebar-wrapper">
