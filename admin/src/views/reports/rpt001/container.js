@@ -1,15 +1,36 @@
 import React from 'react';
+import axios from 'axios';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Card from '../../../components/base/card';
 import FormInputs from '../../../components/base/formInputs';
 import Button from '../../../components/base/customButton';
 import { useTranslation } from 'react-i18next';
+import { saveAs } from 'file-saver';
 
 const Rpt001 = function() {  
   const { t } = useTranslation();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('submit....');
+
+    let data = {
+      name: 'ANH', 
+      price1: 5000, 
+      price2: 8000, 
+      receiptId: 'RPT-001'
+    }
+    axios.post('http://localhost:8080/api/create-pdf', data).then(function(r){
+      console.log(r);
+      debugger;
+      axios.get('http://localhost:8080/api/fetch-pdf', { responseType: 'blob' }).then(function(res){
+        debugger;
+        console.log('here');
+        const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
+          saveAs(pdfBlob, 'new-pdf.pdf');
+      });
+    }, function(e) {
+      console.log(e);
+    });
   }
   return (
     <div className='content'>
