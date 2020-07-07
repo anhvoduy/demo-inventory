@@ -11,20 +11,14 @@ const Rpt001 = function() {
   const { t } = useTranslation();
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('submit....');
-
     let data = {
       name: 'ANH', 
       price1: 5000, 
       price2: 8000, 
       receiptId: 'RPT-001'
     }
-    axios.post('http://localhost:8080/api/create-pdf', data).then(function(r){
-      console.log(r);
-      debugger;
+    axios.post('http://localhost:8080/api/create-pdf', data).then(function(){
       axios.get('http://localhost:8080/api/fetch-pdf', { responseType: 'blob' }).then(function(res){
-        debugger;
-        console.log('here');
         const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
           saveAs(pdfBlob, 'new-pdf.pdf');
       });

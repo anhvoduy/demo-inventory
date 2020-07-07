@@ -1,10 +1,10 @@
 const pdf = require('html-pdf');
 const rpt001 = require('../reports/rpt001');
 
-const rptService = function() {
+const Factory = function() {
 }
 
-rptService.export_rpt001 = function(data) {
+Factory.export_rpt001 = function(data) {
     return new Promise(function(resolve, reject) {
         pdf.create(rpt001(data), {}).toFile(`${__dirname}/exports/rpt001.pdf`, (err) => {
             if(err) return reject(err);
@@ -13,4 +13,4 @@ rptService.export_rpt001 = function(data) {
     });    
 }
 
-module.exports = rptService;
+module.exports = Factory;
