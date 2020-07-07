@@ -19,8 +19,8 @@ router.post('/create-pdf', async (req, res) => {
 });
 
 router.get('/fetch-pdf', (req, res, next) => {
-    let fileName = path.join(__dirname + '/../exports/rpt001.pdf');
-    res.sendFile(fileName);
+    let fileLocation = path.join(__dirname, '../exports/rpt001.pdf');
+    res.sendFile(fileLocation);
 });
 
 module.exports = router;
