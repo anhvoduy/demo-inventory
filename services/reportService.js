@@ -2,8 +2,7 @@ const path = require('path');
 const pdf = require('html-pdf');
 const rpt001 = require('../reports/rpt001');
 
-const Factory = function() {
-}
+const Factory = function() {};
 
 Factory.export_rpt001 = function(data) {
     return new Promise(function(resolve, reject) {
@@ -13,6 +12,6 @@ Factory.export_rpt001 = function(data) {
             else return resolve({ success: true });
         });
     });    
-}
+};
 
 module.exports = Factory;
