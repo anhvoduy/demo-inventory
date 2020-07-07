@@ -17,8 +17,8 @@ const Rpt001 = function() {
       price2: 8000, 
       receiptId: 'RPT-001'
     }
-    axios.post('http://localhost:8080/api/create-pdf', data).then(function(){
-      axios.get('http://localhost:8080/api/fetch-pdf', { responseType: 'blob' }).then(function(res){
+    axios.post('/api/create-pdf', data).then(function(){
+      axios.get('/api/fetch-pdf', { responseType: 'blob' }).then(function(res){
         const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
           saveAs(pdfBlob, 'new-pdf.pdf');
       });
