@@ -1,4 +1,5 @@
 import Dashboard from './views/dashboard';
+import Forrest from './views/forrest';
 import Icons from './views/icons';
 import Maps from './views/maps';
 import Accounts from './views/accounts';
@@ -24,6 +25,14 @@ const routes = [
     name: "Dashboard",
     icon: "pe-7s-graph",
     component: Dashboard,
+    redirect: false,
+    layout: "/admin"
+  },
+  {
+    path: "/forrest",
+    name: "Forrest",
+    icon: "pe-7s-graph3",
+    component: Forrest,
     redirect: false,
     layout: "/admin"
   },
