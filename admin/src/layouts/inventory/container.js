@@ -7,9 +7,7 @@ import Footer from '../../components/base/footer';
 import Sidebar from '../../components/base/sidebar';
 
 import FixedPlugin from '../../components/base/fixedPlugin';
-
-import { style } from 'variables/Variables.js';
-
+import { style } from '../../variables';
 import routes from 'routes.js';
 
 import image from 'assets/img/sidebar-3.jpg';

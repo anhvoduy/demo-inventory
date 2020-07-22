@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Grid, Row, Col, Table } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/base/card';
-import { thReport, tdReport } from '../../variables/Variables';
+import { thReport, tdReport } from '../../variables';
 
 const Reports = function() {  
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col, Table } from 'react-bootstrap';
 import Card from '../../components/base/card';
-import { thArray, tdArray } from '../../variables/Variables';
+import { thArray, tdArray } from '../../variables';
 
 const TransactionList = function() {  
   return (
