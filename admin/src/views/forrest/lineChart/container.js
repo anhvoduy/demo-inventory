@@ -20,9 +20,9 @@ const LineChart = () => {
   return (
     <Card statsIcon='fa fa-history'
           id='chartHours'
-          title='Users Behavior'
-          category='24 Hours performance'
-          stats='Updated 3 minutes ago'
+          title={t('gold_prices')}
+          category='Today'
+          stats='Updated 1 minutes ago'
           content={
             <div className='ct-chart'>
               <ChartistGraph

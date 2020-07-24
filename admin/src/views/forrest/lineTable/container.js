@@ -11,7 +11,7 @@ const LineTable = () => {
           id='goldTable'
           title={t('gold_prices')}
           category='Today'
-          stats='Updated 3 minutes ago'
+          stats='Updated 1 minutes ago'
           content={
             <Table striped hover>
               <thead>
