@@ -44,7 +44,7 @@ const resources = {
       'login': 'Đăng nhập',
       'username': 'Tên đăng nhập',
       'password': 'Mật khẩu',
-      'inventory': 'Quản lý kho',
+      'inventory': 'Quản lý tài chính',
       'Dashboard': 'Bảng điện tử',
       'Accounts': 'Tài khoản',
       'Customer': 'Khách hàng',
