@@ -267,6 +267,18 @@ const tdArray = [
 
 //
 // //
+// // // For Gold
+// //
+//
+const thGold = ["ID", "Name", "Buy", "Sell", "Difference", "Avg", "DateTime"];
+const tdGold = [
+  ["1", "Vàng SJC 1L - 10L", "54,400", "56,000", "1,600", "55,200", "24-07-2020 11:30:00"],
+  ["2", "Vàng SJC 1L - 10L", "54,400", "56,000", "1,600", "55,200", "24-07-2020 11:40:00"],
+  ["3", "Vàng SJC 1L - 10L", "54,400", "56,000", "1,600", "55,200", "24-07-2020 11:50:00"]
+];
+
+//
+// //
 // // // For icons
 // //
 //
@@ -591,6 +603,8 @@ module.exports = {
   style, // For notifications (App container and Notifications view)
   thArray,
   tdArray, // For tables (TableList view)
+  thGold,
+  tdGold,
   iconsArray, // For icons (Icons view)
   thReport,
   tdReport,

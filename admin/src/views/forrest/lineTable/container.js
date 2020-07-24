@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import Card from '../../../components/base/card';
-import { thArray, tdArray } from '../../../variables';
+import { thGold, tdGold } from '../../../variables';
 
 const LineTable = () => {  
   return (
@@ -15,17 +15,21 @@ const LineTable = () => {
               <thead>
                 <tr>
                   {
-                    thArray.map((prop, key) => { return <th key={key}>{prop}</th>; })
+                    thGold.map((prop, key) => {
+                      return <th key={key}>{prop}</th>;
+                    })
                   }
                 </tr>
               </thead>
               <tbody>
                 {
-                  tdArray.map((prop, key) => {
+                  tdGold.map((prop, key) => {
                     return (
                       <tr key={key}>
                         {
-                          prop.map((prop, key) => { return <td key={key}>{prop}</td>; })
+                          prop.map((prop, key) => {
+                            return <td key={key}>{prop}</td>;
+                          })
                         }
                       </tr>
                     );
