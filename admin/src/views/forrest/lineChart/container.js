@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ChartistGraph from 'react-chartist';
 import Card from '../../../components/base/card';
-import { dataSales, optionsSales, responsiveSales, legendSales } from '../../../variables';
+import { dataGolds, optionsGolds, responsiveGolds, legendGolds } from '../../../variables';
+import { useTranslation } from 'react-i18next';
 
 const createLegend = function(json) {
   var legend = [];
@@ -14,28 +15,27 @@ const createLegend = function(json) {
   return legend;
 }
 
-class Container extends Component {
-  render() {
-    return (
-      <Card statsIcon='fa fa-history'
-            id='chartHours'
-            title='Users Behavior'
-            category='24 Hours performance'
-            stats='Updated 3 minutes ago'
-            content={
-              <div className='ct-chart'>
-                <ChartistGraph
-                  data={dataSales}
-                  type='Line'
-                  options={optionsSales}
-                  responsiveOptions={responsiveSales}
-                />
-              </div>
-            }
-        legend={ <div className='legend'>{createLegend(legendSales)}</div> }
-      />
-    );
-  }
+const LineChart = () => {
+  const { t } = useTranslation();
+  return (
+    <Card statsIcon='fa fa-history'
+          id='chartHours'
+          title='Users Behavior'
+          category='24 Hours performance'
+          stats='Updated 3 minutes ago'
+          content={
+            <div className='ct-chart'>
+              <ChartistGraph
+                data={dataGolds}
+                type='Line'
+                options={optionsGolds}
+                responsiveOptions={responsiveGolds}
+              />
+            </div>
+          }
+      legend={ <div className='legend'>{createLegend(legendGolds)}</div> }
+    />
+  );  
 }
 
-export default Container;
+export default LineChart;

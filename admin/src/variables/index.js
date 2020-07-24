@@ -502,27 +502,99 @@ var legendPie = {
   types: ["info", "danger", "warning"]
 };
 
+// data for Gold Chart
+var dataGolds = {
+  labels: [
+    "07:00",
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
+    "19:00"        
+  ],
+  series: [
+    [53.400, 53.450, 53.470, 54.570, 54.580, 54.590, 54.690],
+    [54.400, 54.450, 54.500]
+  ]
+};
+
+var optionsGolds = {
+  low: 45,
+  high: 60,
+  showArea: false,
+  height: "245px",
+  axisX: {
+    showGrid: false
+  },
+  lineSmooth: true,
+  showLine: true,
+  showPoint: true,
+  fullWidth: true,
+  chartPadding: {
+    right: 50
+  }
+};
+var responsiveGolds = [
+  [
+    "screen and (max-width: 640px)",
+    {
+      axisX: {
+        labelInterpolationFnc: function(value) {
+          return value[0];
+        }
+      }
+    }
+  ]
+];
+var legendGolds = {
+  names: ["Buy", "Sell"],
+  types: ["info", "danger"]
+};
+
 // Data for Line Chart
 var dataSales = {
   labels: [
-    "9:00AM",
-    "12:00AM",
-    "3:00PM",
-    "6:00PM",
-    "9:00PM",
-    "12:00PM",
-    "3:00AM",
-    "6:00AM"
+    "00:00",
+    "01:00",
+    "02:00",
+    "03:00",
+    "04:00",
+    "05:00",
+    "06:00",
+    "07:00",
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
+    "19:00",
+    "20:00",
+    "21:00",
+    "22:00",
+    "23:00",
+    "24:00"
   ],
   series: [
     [287, 385, 490, 492, 554, 586, 698, 695],
-    [67, 152, 143, 240, 287, 335, 435, 437],
-    [23, 113, 67, 108, 190, 239, 307, 308]
+    [67, 152, 143, 240, 287, 335, 435, 437]
   ]
 };
 var optionsSales = {
   low: 0,
-  high: 800,
+  high: 2000,
   showArea: false,
   height: "245px",
   axisX: {
@@ -612,8 +684,12 @@ module.exports = {
   legendPie,
   dataSales,
   optionsSales,
-  responsiveSales,
+  responsiveSales,  
   legendSales,
+  dataGolds,
+  optionsGolds,
+  responsiveGolds,
+  legendGolds,
   dataBar,
   optionsBar,
   responsiveBar,
