@@ -517,17 +517,17 @@ var dataGolds = {
     "16:00",
     "17:00",
     "18:00",
-    "19:00"        
+    "19:00"
   ],
   series: [
-    [53.400, 53.450, 53.470, 54.570, 54.580, 54.590, 54.690],
-    [54.400, 54.450, 54.500]
+    [53.40, 53.45, 53.47, 54.57, 54.58, 54.59, 55.10, 55.30, 55.40],
+    [54.40, 54.45, 54.50, 55.50, 55.60, 55.80, 56.00, 56.20, 56.40]
   ]
 };
 
 var optionsGolds = {
-  low: 45,
-  high: 60,
+  low: 48.00,
+  high: 58.00,
   showArea: false,
   height: "245px",
   axisX: {
@@ -684,7 +684,7 @@ module.exports = {
   legendPie,
   dataSales,
   optionsSales,
-  responsiveSales,  
+  responsiveSales,
   legendSales,
   dataGolds,
   optionsGolds,
