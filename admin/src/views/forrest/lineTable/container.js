@@ -2,12 +2,14 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import Card from '../../../components/base/card';
 import { thGold, tdGold } from '../../../variables';
+import { useTranslation } from 'react-i18next';
 
-const LineTable = () => {  
+const LineTable = () => {
+  const { t } = useTranslation();
   return (
     <Card statsIcon='fa fa-history'
           id='goldTable'
-          title='Gold Prices'
+          title={t('gold_prices')}
           category='Today'
           stats='Updated 3 minutes ago'
           content={
@@ -15,20 +17,20 @@ const LineTable = () => {
               <thead>
                 <tr>
                   {
-                    thGold.map((prop, key) => {
-                      return <th key={key}>{prop}</th>;
+                    thGold.map((title, key) => {
+                      return <th key={key}>{title}</th>;
                     })
                   }
                 </tr>
               </thead>
               <tbody>
                 {
-                  tdGold.map((prop, key) => {
+                  tdGold.map((row, key) => {
                     return (
                       <tr key={key}>
                         {
-                          prop.map((prop, key) => {
-                            return <td key={key}>{prop}</td>;
+                          row.map((col, key) => {
+                            return <td key={key}>{col}</td>;
                           })
                         }
                       </tr>
