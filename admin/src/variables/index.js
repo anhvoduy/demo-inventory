@@ -267,6 +267,18 @@ const tdArray = [
 
 //
 // //
+// // // For Gold
+// //
+//
+const thGold = ["ID", "Name", "Buy", "Sell", "Difference", "Avg", "DateTime"];
+const tdGold = [
+  ["1", "Vàng SJC 1L - 10L", "54,400", "56,000", "1,600", "55,200", "24-07-2020 11:30:00"],
+  ["2", "Vàng SJC 1L - 10L", "54,400", "56,000", "1,600", "55,200", "24-07-2020 11:40:00"],
+  ["3", "Vàng SJC 1L - 10L", "54,400", "56,000", "1,600", "55,200", "24-07-2020 11:50:00"]
+];
+
+//
+// //
 // // // For icons
 // //
 //
@@ -490,6 +502,62 @@ var legendPie = {
   types: ["info", "danger", "warning"]
 };
 
+// data for Gold Chart
+var dataGolds = {
+  labels: [
+    "07:00",
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
+    "19:00"
+  ],
+  series: [
+    [53.40, 53.45, 53.47, 54.57, 54.58, 54.59, 55.10, 55.30, 55.40, 55.50, 55.65, 55.75, 55.80],
+    [54.40, 54.45, 54.50, 55.50, 55.60, 55.80, 56.00, 56.20, 56.40, 56.60, 56.70, 56.80, 56.90]
+  ]
+};
+
+var optionsGolds = {
+  low: 48.00,
+  high: 58.00,
+  showArea: false,
+  height: "245px",
+  axisX: {
+    showGrid: false
+  },
+  lineSmooth: true,
+  showLine: true,
+  showPoint: true,
+  fullWidth: true,
+  chartPadding: {
+    right: 50
+  }
+};
+var responsiveGolds = [
+  [
+    "screen and (max-width: 640px)",
+    {
+      axisX: {
+        labelInterpolationFnc: function(value) {
+          return value[0];
+        }
+      }
+    }
+  ]
+];
+var legendGolds = {
+  names: ["Buy", "Sell"],
+  types: ["info", "danger"]
+};
+
 // Data for Line Chart
 var dataSales = {
   labels: [
@@ -591,6 +659,8 @@ module.exports = {
   style, // For notifications (App container and Notifications view)
   thArray,
   tdArray, // For tables (TableList view)
+  thGold,
+  tdGold,
   iconsArray, // For icons (Icons view)
   thReport,
   tdReport,
@@ -600,6 +670,10 @@ module.exports = {
   optionsSales,
   responsiveSales,
   legendSales,
+  dataGolds,
+  optionsGolds,
+  responsiveGolds,
+  legendGolds,
   dataBar,
   optionsBar,
   responsiveBar,

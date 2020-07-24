@@ -34,6 +34,7 @@ const resources = {
       'to_date': 'To Date',
       'btnPrint': 'Print',
       'last_update': 'Last updated, Today',
+      'gold_prices': 'Gold Prices',
       'refresh': 'Refresh',
       'sign_out': 'Sign out'
     }
@@ -68,6 +69,7 @@ const resources = {
       'to_date': 'Đến ngày',
       'btnPrint': 'In báo cáo',
       'last_update': 'Last updated, Today',
+      'gold_prices': 'Giá vàng',
       'refresh': 'Đồng bộ',
       'sign_out': 'Đăng xuất'
     }
