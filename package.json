@@ -1,10 +1,10 @@
 {
   "name": "react-inventory-system",
   "description": "react-inventory-system",
-  "version": "1.3.5",
-  "author": "voduyanh",
-  "email": "voduyanh1984@gmail.com",
-  "license": "ISC",
+  "version": "1.3.6",
+  "author": "devinsg",
+  "email": "duyanh2005@gmail.com",
+  "license": "MIT",
   "main": "app.js",
   "engines": {
     "node": "^12.15.0",
