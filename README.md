@@ -1,10 +1,10 @@
-# react-bootstrap-admin
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### inventory web application
+- reactjs
+- nodejs
+- sqlserver
+- express
 
-# sample template:
-https://github.com/creativetimofficial/light-bootstrap-dashboard-react
-
-# run docker:
+### run docker:
 
 # build image
 docker build -t admin/node-demo-inventory .
