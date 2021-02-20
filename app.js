@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use('/api', require('./routes/api'));
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 3000);
 app.set('host', process.env.HOST || '0.0.0.0');
 
 app.use('/', express.static(path.join(__dirname, 'admin/build'), { index: 'index.html '}));

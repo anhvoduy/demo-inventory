@@ -1,14 +1,14 @@
 {
   "name": "react-inventory-system",
   "description": "react-inventory-system",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "author": "devinsg",
-  "email": "duyanh2005@gmail.com",
+  "email": "vnonline365@gmail.com",
   "license": "MIT",
   "main": "app.js",
   "engines": {
-    "node": "^12.15.0",
-    "npm": ">=6"
+    "node": "12.15.0",
+    "npm": "6.13.4"
   },
   "directories": {
     "doc": "docs"
